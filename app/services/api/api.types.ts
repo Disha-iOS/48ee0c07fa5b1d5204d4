@@ -5,5 +5,4 @@ export interface User {
   name: string
 }
 
-export type GetUsersResult = { kind: "ok"; users: User[] } | GeneralApiProblem
-export type GetUserResult = { kind: "ok"; user: User } | GeneralApiProblem
+export type GetCommonResult = { kind: "ok"; data: any } | GeneralApiProblem
