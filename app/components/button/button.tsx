@@ -1,5 +1,5 @@
 import * as React from "react"
-import { TouchableOpacity } from "react-native"
+import { TouchableOpacity, ActivityIndicator } from "react-native"
 import { Text } from "../text/text"
 import { viewPresets, textPresets } from "./button.presets"
 import { ButtonProps } from "./button.props"
@@ -18,6 +18,7 @@ export function Button(props: ButtonProps) {
     text,
     style: styleOverride,
     textStyle: textStyleOverride,
+    isLoading,
     children,
     ...rest
   } = props
@@ -28,10 +29,10 @@ export function Button(props: ButtonProps) {
   )
 
   const content = children || <Text tx={tx} text={text} style={textStyle} />
-
+  const loading = children || <ActivityIndicator size="small" color="#fff"/>
   return (
     <TouchableOpacity style={viewStyle} {...rest}>
-      {content}
+      {isLoading ? loading : content}
     </TouchableOpacity>
   )
 }
