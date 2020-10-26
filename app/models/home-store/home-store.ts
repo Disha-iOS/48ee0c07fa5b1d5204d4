@@ -26,7 +26,7 @@ export const HomeStoreModel = types
           self.countryData = null
         }
       } catch (error){
-
+        console.log(error);
       }
     }),
     getWeatherDetail: flow(function* getWeatherDetail(countryName: string){

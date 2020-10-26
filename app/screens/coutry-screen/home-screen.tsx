@@ -54,9 +54,7 @@ export const HomeScreen = observer(function HomeScreen() {
         disable={!isValidText} 
         isLoading={isLoading} 
         style={{...styles.buttonSubmitStyle, backgroundColor: isValidText? "green": "gray"}} 
-        onPress={() => {
-            onSubmitPress()
-        }}
+        onPress={onSubmitPress()}
         />
     </View>
   )
