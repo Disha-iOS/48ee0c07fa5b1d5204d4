@@ -1,0 +1,76 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.rnapp"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="16"
+8-->/Users/mac241/Desktop/ReactNativeTest/android/app/src/main/AndroidManifest.xml
+9        android:targetSdkVersion="29" />
+9-->/Users/mac241/Desktop/ReactNativeTest/android/app/src/main/AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.INTERNET" />
+11-->/Users/mac241/Desktop/ReactNativeTest/android/app/src/main/AndroidManifest.xml:4:5-67
+11-->/Users/mac241/Desktop/ReactNativeTest/android/app/src/main/AndroidManifest.xml:4:22-64
+12    <uses-permission android:name="android.permission.USE_BIOMETRIC" />
+12-->[:react-native-keychain] /Users/mac241/Desktop/ReactNativeTest/node_modules/react-native-keychain/android/build/intermediates/library_manifest/release/AndroidManifest.xml:11:5-72
+12-->[:react-native-keychain] /Users/mac241/Desktop/ReactNativeTest/node_modules/react-native-keychain/android/build/intermediates/library_manifest/release/AndroidManifest.xml:11:22-69
+13    <uses-permission android:name="android.permission.USE_FINGERPRINT" />
+13-->[:react-native-keychain] /Users/mac241/Desktop/ReactNativeTest/node_modules/react-native-keychain/android/build/intermediates/library_manifest/release/AndroidManifest.xml:12:5-74
+13-->[:react-native-keychain] /Users/mac241/Desktop/ReactNativeTest/node_modules/react-native-keychain/android/build/intermediates/library_manifest/release/AndroidManifest.xml:12:22-71
+14
+15    <application
+15-->/Users/mac241/Desktop/ReactNativeTest/android/app/src/main/AndroidManifest.xml:6:5-25:19
+16        android:name="com.rnapp.MainApplication"
+16-->/Users/mac241/Desktop/ReactNativeTest/android/app/src/main/AndroidManifest.xml:7:7-38
+17        android:allowBackup="false"
+17-->/Users/mac241/Desktop/ReactNativeTest/android/app/src/main/AndroidManifest.xml:11:7-34
+18        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+18-->[androidx.core:core:1.1.0] /Users/mac241/.gradle/caches/transforms-2/files-2.1/639e914bfc1efa21e36199d3ff2c5eef/core-1.1.0/AndroidManifest.xml:24:18-86
+19        android:icon="@mipmap/ic_launcher"
+19-->/Users/mac241/Desktop/ReactNativeTest/android/app/src/main/AndroidManifest.xml:9:7-41
+20        android:label="@string/app_name"
+20-->/Users/mac241/Desktop/ReactNativeTest/android/app/src/main/AndroidManifest.xml:8:7-39
+21        android:roundIcon="@mipmap/ic_launcher_round"
+21-->/Users/mac241/Desktop/ReactNativeTest/android/app/src/main/AndroidManifest.xml:10:7-52
+22        android:theme="@style/AppTheme" >
+22-->/Users/mac241/Desktop/ReactNativeTest/android/app/src/main/AndroidManifest.xml:12:7-38
+23        <activity
+23-->/Users/mac241/Desktop/ReactNativeTest/android/app/src/main/AndroidManifest.xml:13:7-23:18
+24            android:name="com.rnapp.MainActivity"
+24-->/Users/mac241/Desktop/ReactNativeTest/android/app/src/main/AndroidManifest.xml:14:9-37
+25            android:configChanges="keyboard|keyboardHidden|orientation|screenSize|uiMode"
+25-->/Users/mac241/Desktop/ReactNativeTest/android/app/src/main/AndroidManifest.xml:16:9-86
+26            android:label="@string/app_name"
+26-->/Users/mac241/Desktop/ReactNativeTest/android/app/src/main/AndroidManifest.xml:15:9-41
+27            android:launchMode="singleTask"
+27-->/Users/mac241/Desktop/ReactNativeTest/android/app/src/main/AndroidManifest.xml:17:9-40
+28            android:windowSoftInputMode="adjustResize" >
+28-->/Users/mac241/Desktop/ReactNativeTest/android/app/src/main/AndroidManifest.xml:18:9-51
+29            <intent-filter>
+29-->/Users/mac241/Desktop/ReactNativeTest/android/app/src/main/AndroidManifest.xml:19:9-22:25
+30                <action android:name="android.intent.action.MAIN" />
+30-->/Users/mac241/Desktop/ReactNativeTest/android/app/src/main/AndroidManifest.xml:20:13-65
+30-->/Users/mac241/Desktop/ReactNativeTest/android/app/src/main/AndroidManifest.xml:20:21-62
+31
+32                <category android:name="android.intent.category.LAUNCHER" />
+32-->/Users/mac241/Desktop/ReactNativeTest/android/app/src/main/AndroidManifest.xml:21:13-73
+32-->/Users/mac241/Desktop/ReactNativeTest/android/app/src/main/AndroidManifest.xml:21:23-70
+33            </intent-filter>
+34        </activity>
+35        <activity android:name="com.facebook.react.devsupport.DevSettingsActivity" />
+35-->/Users/mac241/Desktop/ReactNativeTest/android/app/src/main/AndroidManifest.xml:24:7-84
+35-->/Users/mac241/Desktop/ReactNativeTest/android/app/src/main/AndroidManifest.xml:24:17-81
+36        <!-- suppress AndroidDomInspection -->
+37        <activity
+37-->[:react-native-keychain] /Users/mac241/Desktop/ReactNativeTest/node_modules/react-native-keychain/android/build/intermediates/library_manifest/release/AndroidManifest.xml:17:9-20:67
+38            android:name="androidx.biometric.DeviceCredentialHandlerActivity"
+38-->[:react-native-keychain] /Users/mac241/Desktop/ReactNativeTest/node_modules/react-native-keychain/android/build/intermediates/library_manifest/release/AndroidManifest.xml:18:13-78
+39            android:exported="true"
+39-->[:react-native-keychain] /Users/mac241/Desktop/ReactNativeTest/node_modules/react-native-keychain/android/build/intermediates/library_manifest/release/AndroidManifest.xml:19:13-36
+40            android:theme="@style/DeviceCredentialHandlerTheme" />
+40-->[:react-native-keychain] /Users/mac241/Desktop/ReactNativeTest/node_modules/react-native-keychain/android/build/intermediates/library_manifest/release/AndroidManifest.xml:20:13-64
+41    </application>
+42
+43</manifest>

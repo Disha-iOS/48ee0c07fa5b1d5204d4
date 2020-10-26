@@ -39,8 +39,8 @@ export const DetailScreen = observer(function DetailScreen() {
     }, [homeStore.weatherDetail])
 
     const onSubmitPress = () => {
-        homeStore.getWeatherDetail(countryData.capital)
         setIsLoading(true)
+        homeStore.getWeatherDetail(countryData.capital)
     }
 
   return (
