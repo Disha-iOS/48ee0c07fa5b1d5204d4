@@ -39,7 +39,7 @@ export class Api {
 
   async getCountryDetails(countryName: string): Promise<Types.GetCommonResult> {
     // make the api call
-    const response: ApiResponse<any> = await this.apisauce.get("https://restcountries.eu/rest/v2/name/"+ countryname)
+    const response: ApiResponse<any> = await this.apisauce.get("https://restcountries.eu/rest/v2/name/"+ countryName)
 
     // the typical ways to die when calling an api
     if (!response.ok) {

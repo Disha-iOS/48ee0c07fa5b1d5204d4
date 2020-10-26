@@ -49,7 +49,7 @@ export const DetailScreen = observer(function DetailScreen() {
       {renderRow("population", countryData.population)}
       {renderRow("latlng", countryData.latlng)}
       <View> 
-        <Text preset={"bold"} text="flag"/>
+        <Text style={{color: 'black'}} preset={"bold"} text="flag"/>
         <View>
           <SvgUri width="50" height="50" uri={countryData.flag}/>
         </View>
@@ -72,7 +72,7 @@ export const DetailScreen = observer(function DetailScreen() {
         style={{marginHorizontal: 20, height: 50}}
         isLoading={isLoading}
         text="Capital Weather"
-        onPress={onSubmitPress()}
+        onPress={() => {onSubmitPress()}}
       />
     </View>
   )
